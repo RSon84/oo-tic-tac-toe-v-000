@@ -12,5 +12,5 @@ WIN_COMBINATIONS = [
     [1,4,7],
     [0,4,8]
   ]
-  end
+
 end
