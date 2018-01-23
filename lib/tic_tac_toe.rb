@@ -2,7 +2,7 @@ class TicTacToe
   def initialize(board = nil)
     @board = board || Array.new(9, " ")
   end
-  def WIN_COMBINATIONS= arrays
+  def WIN_COMBINATIONS= arrays[" ", " ", " "]
     @WIN_COMBINATIONS= arrays[
     [0,1,2],
     [3,4,5],
