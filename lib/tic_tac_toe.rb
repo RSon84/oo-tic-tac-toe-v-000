@@ -113,8 +113,7 @@ return @board[won?.first]
 end
 
 def play
-  turn_count = 0
-  while turn_count < 10 || over?
+  until turn_count == 9 || over?
     turn
   end
   if won?
