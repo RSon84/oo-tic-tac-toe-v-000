@@ -38,9 +38,9 @@ WIN_COMBINATIONS = [
 end
 
 def valid_move?(index)
-  if index.between?(0, 8) && !(position_taken?(@board, index))
+  if index.between?(0, 8) && !(position_taken?(index))
     return true
-  else !index.between?(0, 8) || (position_taken?(@board, index))
+  else !index.between?(0, 8) || (position_taken?(index))
       return false
   end
 end
