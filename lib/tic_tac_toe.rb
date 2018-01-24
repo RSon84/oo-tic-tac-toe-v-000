@@ -113,6 +113,7 @@ return @board[won?.first]
 end
 
 def play
+  over = over?
   until over? == true
     if won? != false
       break
@@ -121,6 +122,7 @@ def play
     break
   end
   turn
+  over = over?
 end
   if won? != false
     winner
