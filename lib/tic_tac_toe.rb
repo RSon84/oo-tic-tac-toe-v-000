@@ -113,12 +113,20 @@ return @board[won?.first]
 end
 
 def play
-  until over? || turn_count == 9
-    turn
+  until over? == true
+    if won? != false
+      break
   end
-  if won?
+  if draw? == true
+    break
+  end
+  turn
+end
+  if won? =! false
+    winner
     puts "Congratulations, #{Winner}!"
-  elsif draw?
+  end
+  if draw? == true
     puts "Cat's Game!"
 
   end
