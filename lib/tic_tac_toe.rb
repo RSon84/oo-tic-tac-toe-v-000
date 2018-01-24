@@ -122,7 +122,7 @@ def play
   end
   turn
 end
-  if won? =! false
+  if won? != false
     winner
     puts "Congratulations, #{Winner}!"
   end
