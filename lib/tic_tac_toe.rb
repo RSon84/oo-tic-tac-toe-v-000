@@ -73,7 +73,7 @@ def turn
   else
     turn
   end
-  display_board(board)
+  display_board
 end
 
 end
