@@ -63,4 +63,17 @@ def current_player
   turn_count % 2 == 0 ? "X" : "O"
 end
 
+def turn
+  puts "Please enter 1-9:"
+  input = gets.strip
+  index = input_to_index(input)
+  current_player = @board[index]
+  if valid_move?(index)
+    move(index, current_player)
+  else
+    turn
+  end
+  display_board(board)
+end
+
 end
