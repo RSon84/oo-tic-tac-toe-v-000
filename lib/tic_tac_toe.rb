@@ -115,6 +115,7 @@ end
 def play
   if turn_count < 10 || over?
     turn
+  end
   if won?
     puts "Congratulations, #{Winner}!"
   elsif draw?
