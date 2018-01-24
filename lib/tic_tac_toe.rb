@@ -113,7 +113,8 @@ return @board[won?.first]
 end
 
 def play
-  turn
+  if turn_count < 10 || over?
+    turn
   if won?
     puts "Congratulations, #{Winner}!"
   elsif draw?
