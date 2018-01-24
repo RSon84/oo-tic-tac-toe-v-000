@@ -100,4 +100,15 @@ def over?
   won? || draw?
 end
 
+def winner
+  if won?.nil?
+    return nil
+  end
+  if @board[won?.first] == "X"
+    return @board[won?.first]
+  elsif @board[won?.first] == "O"
+return @board[won?.first]
+
+  end
+
  end
