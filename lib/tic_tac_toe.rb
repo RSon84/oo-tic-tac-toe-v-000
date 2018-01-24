@@ -79,13 +79,13 @@ def turn
    end
  end
 
- def won?(board)
- 
- empty_board = board.all? {|location| location == " "}
+ def won?
+
+ empty_board = @board.all? {|location| location == " "}
  WIN_COMBINATIONS.detect do |sub_array|
-  board[sub_array[0]] == board[sub_array[1]] && board[sub_array[1]] == board[sub_array[2]] && position_taken?(board, sub_array[0])
- 
+  @board[sub_array[0]] == @board[sub_array[1]] && @board[sub_array[1]] == @board[sub_array[2]] && position_taken?(sub_array[0])
+
  end
  end
- 
+
  end
