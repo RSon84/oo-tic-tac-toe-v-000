@@ -69,7 +69,7 @@ def turn
   index = input_to_index(input)
   current_player = @board[index]
   if valid_move?(index)
-    move(index, current_player)
+    move(index, current_player = "X")
   else
     turn
   end
