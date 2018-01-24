@@ -115,6 +115,7 @@ end
 def play
   until over? || turn_count == 9
   if won?
+    winner
     puts "Congratulations, #{Winner}!"
     break
   end
