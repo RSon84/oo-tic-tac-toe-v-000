@@ -45,4 +45,18 @@ def valid_move?(index)
   end
 end
 
+def turn_count
+
+  move_count = []
+  @board.each do |token|
+    counter = 0
+    if token == "X" || token == "O"
+      move_count.push(1)
+    else
+      counter += 1
+    end
+  end
+  move_count.length.to_i
+end
+
 end
