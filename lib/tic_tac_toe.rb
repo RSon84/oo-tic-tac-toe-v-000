@@ -120,6 +120,8 @@ def play
     puts "Congratulations, #{Winner}!"
   elsif draw?
     puts "Cat's Game!"
+  else
+    turn
   end
  end
  end
