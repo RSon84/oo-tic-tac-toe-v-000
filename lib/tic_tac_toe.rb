@@ -111,4 +111,14 @@ return @board[won?.first]
 
   end
 end
+
+def play
+  until over?
+  turn
+  end
+  if won?
+    puts "Congratulations, #{Winner}!"
+  elsif draw?
+    puts "Cat's Game!"
+  end
  end
