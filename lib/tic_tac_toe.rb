@@ -45,7 +45,7 @@ def valid_move?(index)
   end
 end
 
-def turn_count(@board)
+def turn_count(display_board)
 
   move_count = []
   @board.each do |token|
